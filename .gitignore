@@ -1,0 +1,29 @@
+# Python 编译缓存
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# 虚拟环境
+env/
+.venv/
+venv/
+
+# 环境变量（含 API Key）
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# direnv / 虚拟环境激活脚本
+.envrc
+envrc
+
+# 向量数据库（二进制数据）
+vector_db/
+chroma.sqlite3
