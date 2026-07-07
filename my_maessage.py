@@ -29,8 +29,8 @@ agent_executor = create_agent(model, [tavily_search])
 # 5. 直接 invoke
 query = "请帮我查询今天 IT 之家的前面 10 条数据。"
 response = agent_executor.invoke({
-    "messages": [HumanMessage(content=query)]
+    
+    "messages": [SystemMessage(content="你是一个专业的新闻搜索助手"), HumanMessage(content=query)]
 })
-
-# 6. 获取结果
-print(response["messages"])
+for msg in response["messages"]:
+    msg.pretty_print()
