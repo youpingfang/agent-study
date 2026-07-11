@@ -17,6 +17,9 @@ venv/
 .vscode/
 .idea/
 
+# 数据库文件
+*.db
+
 # macOS
 .DS_Store
 
